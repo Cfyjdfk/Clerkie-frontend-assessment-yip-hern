@@ -21,7 +21,7 @@ export default function Tab(props: Props) {
     <Link className="tab" href={props.page} onClick={props.toggleClick}>
       <div  style={clickedStyle}>
         <div className="tab-items">
-          <img src={`/${props.name}-icon.png`} />
+          <img alt="icon" src={`/${props.name}-icon.png`} />
           <div>{props.name}</div>
         </div>        
       </div>
