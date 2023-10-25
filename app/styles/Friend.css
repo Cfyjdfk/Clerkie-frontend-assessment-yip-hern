@@ -1,0 +1,39 @@
+.friend {
+    width:100%;
+    border-radius: 6px;
+    border: 1px solid var(--Gray_400, #D7D7D7);
+    background: var(--White, #FFF);
+    padding: 30px;
+    margin: 12px 0;
+}
+.friend-name-section {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+
+.friend-status-indicator {
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 20px;
+    padding:3px 7px;
+    background-color: #DCFFE6;
+}
+
+.friend-details-section {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    color: var(--Gray_600, #ABABAB);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.friend-details-section svg{
+    margin: 0 7px;
+}
+
