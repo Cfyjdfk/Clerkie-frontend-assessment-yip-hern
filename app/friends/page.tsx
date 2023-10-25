@@ -8,7 +8,7 @@ import Header from '../components/Header'
 import { friendStatus } from '../enums/friendStatus'
 import Modal from '../components/Modal'
 
-export default function page() {
+export default function Page() {
 
   const[friendsData, setFriendsData] = React.useState(data)
   const[isFiltered, setIsFiltered] = React.useState(false) 
@@ -54,6 +54,7 @@ export default function page() {
   function clearAll() {
     setIsFiltered(false)
     setFriendsData(data)
+    setFilterArray(new Array(2).fill(false))
   }
 
   function toggleModal() {
