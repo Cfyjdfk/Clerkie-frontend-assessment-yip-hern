@@ -7,6 +7,7 @@ import Link from 'next/link'
 type Props = {
   name: string
   page: string
+  imageSource: string,
   isClicked: boolean
   toggleClick: (a: any) => any 
 }
@@ -21,7 +22,7 @@ export default function Tab(props: Props) {
     <Link className="tab" href={props.page} onClick={props.toggleClick}>
       <div  style={clickedStyle}>
         <div className="tab-items">
-          <img alt="icon" src={`/${props.name}-icon.png`} />
+          <img alt="icon" src={props.imageSource} />
           <div>{props.name}</div>
         </div>        
       </div>

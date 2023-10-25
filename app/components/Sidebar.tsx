@@ -8,11 +8,13 @@ export default function Sidebar() {
     id: 0,
     page: "/",
     name: "Home",
+    imageSource: "./home-icon.png",
     isClicked: false
   }, {
     id :1,
     page: "./friends",
     name: "Friends",
+    imageSource: "./friends-icon.png",
     isClicked: false
   }
 ]
@@ -31,7 +33,8 @@ const tabs = stateTabData.map(
     (obj) => 
       <Tab key={obj.id} 
         page={obj.page} 
-        name={obj.name} 
+        name={obj.name}
+        imageSource={obj.imageSource} 
         isClicked={obj.isClicked}
         toggleClick={() => toggleClick(obj.id)}/>
   )
